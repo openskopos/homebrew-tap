@@ -1,25 +1,25 @@
 class Skopos < Formula
-  desc "Command line tool for OpenSkopos documents: check, fmt, convert, import, ids, export and diff"
+  desc "Command line tool for OpenSkopos documents: check, fmt, convert, import, ids, export, diff, history, trace, merge and render"
   homepage "https://openskopos.org"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/openskopos/openskopos/releases/download/v0.1.0/skopos-aarch64-apple-darwin.tar.xz"
-      sha256 "d166ab65601c47c5839d319c2160864ef8956d987056187dbd374d2bc31c50d6"
+      url "https://github.com/openskopos/openskopos/releases/download/v0.2.0/skopos-aarch64-apple-darwin.tar.xz"
+      sha256 "615a12d4f51a83f681dfcb1b6b098d956072684079e355fb391fcecf5bf7192b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/openskopos/openskopos/releases/download/v0.1.0/skopos-x86_64-apple-darwin.tar.xz"
-      sha256 "e2a26c713231a52091743bbee5b5fafa542e0f7bc0d963c48956a14b8c965733"
+      url "https://github.com/openskopos/openskopos/releases/download/v0.2.0/skopos-x86_64-apple-darwin.tar.xz"
+      sha256 "5f3343fa55f085aa3364a44a1a6bc1bd24b0ad9fa52ad54ec65f09281b5f6ea3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/openskopos/openskopos/releases/download/v0.1.0/skopos-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7b9ec6c8f9ed2bbe1c780c4c1cb834a2ff9e6cb893e69113a325b0d2f9ac3627"
+      url "https://github.com/openskopos/openskopos/releases/download/v0.2.0/skopos-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2bf911da9e09319128bc3cfac9c2836dbafe028299f32fa81cd5efddbf005456"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/openskopos/openskopos/releases/download/v0.1.0/skopos-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "57037be1ebdb65f0018c084f5d433791f2b49660f01038178ff1087a600e64e0"
+      url "https://github.com/openskopos/openskopos/releases/download/v0.2.0/skopos-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b0b0d053afc50653f6becda0b5096df2bef6bcfc9a9a9e6b5fe7a2e5252b0a6b"
     end
   end
   license "Apache-2.0"
